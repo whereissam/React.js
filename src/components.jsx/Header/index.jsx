@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { nanoid } from 'nanoid'
+import PropTypes from 'prop-types'
 import './header.css'
 
-console.log(nanoid())
-console.log(nanoid())
-console.log(nanoid())
 export default class Header extends Component {
+    
+    static propTypes = {
+        addTodo: PropTypes.func.isRequired
+    }
     handlerKeyUp = (event)=> {
         const {keyCode, target} = event
         if(keyCode !== 13) return
