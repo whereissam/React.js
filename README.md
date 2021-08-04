@@ -1,2 +1,2 @@
 # React.js
-## npm install
+### `npm install`
